@@ -1,0 +1,13 @@
+<template>
+    <lightning-card>
+        <div class="slds-p-around_medium">
+      <lightning-comboBox options={formTypeOptions} value={selectedType} onchange={handleChange} label="Select Form Type"></lightning-comboBox>
+      <template if:true={showEmail}>
+        <lightning-input label="Email" ></lightning-input>
+      </template>
+      <template if:true={showName}>
+        <lightning-input label="Name" ></lightning-input>
+      </template>
+     </div>
+    </lightning-card>
+</template>

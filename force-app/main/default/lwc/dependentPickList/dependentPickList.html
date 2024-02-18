@@ -1,0 +1,10 @@
+<template>
+    <lightning-card title="Dependent Picklists">
+    <div class="slds-p-around_medium">
+        <lightning-combobox label="Controlling field" name="controllingField" value={selectedControlledField} options={controllingOptions} onchange={handleControllingField}></lightning-combobox>
+        <lightning-combobox label="Dependent field" name="dependentField" value={selectedDependentField} options={dependentOptions} ></lightning-combobox>
+
+    </div>
+    </lightning-card>
+    
+</template>

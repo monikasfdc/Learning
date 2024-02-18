@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="All Account" class="slds-p-around_medium">
+        <template if:true={accountList}>
+            <ul>
+                <template for:each={accountList} for:item="a">
+                    <li key={a.id}>{a.fields.Name.value}</li>
+                </template>
+            </ul>
+        </template>
+    </lightning-card>
+</template>
